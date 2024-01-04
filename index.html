@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- #region ***** navbar ***** -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container w-75">
+            <a class="navbar-brand" href="#">
+                <div class="d-flex justify-content-between align-items-center gap-4">
+                    <div class="w-75">
+                        <img src="images/logo.png" class="w-100">
+                    </div>
+                    <div>
+                        <p class="font-bold m-0">Weather</p>
+                        <p class="font-thin">in your city</p>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item py-5 ms-1">
+                        <a class="nav-link px-4 py-0 text-light active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item py-5 ms-1">
+                        <a class="nav-link px-4 py-0 text-light" href="#">News</a>
+                    </li>
+                    <li class="nav-item py-5 ms-1">
+                        <a class="nav-link px-4 py-0 text-light" href="#">Liva cameras</a>
+                    </li>
+                    <li class="nav-item py-5 ms-1">
+                        <a class="nav-link px-4 py-0 text-light" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item py-5 ms-1">
+                        <a class="nav-link px-4 py-0 text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- #endregion -->
+
+    <!-- #region ***** hero ***** -->
+
+    <section class="hero py-5">
+        <div class="container w-75">
+            <div class="rounded-pill bg-dark d-flex p-1">
+                <input type="text" placeholder="Find your location" spellcheck="false"
+                    class="form-control bg-dark border-0 text-light focus-ring focus-ring-dark rounded-pill customPlaceHolder" id="search">
+                <button type="button" class="btn btn-info rounded-pill px-4 py-2" id="searchButton">Find</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+
+    <!-- #region ***** table ***** -->
+
+    <section class="forecast bg-dark ">
+        <div class="container w-75 translate-middle-y">
+            <div class="row g-0 bg-dark rounded">
+                <div class="col-md-4 rounded-start overflow-hidden" id="todaysCard">
+
+                    <!-- todays forecast Card comes from JS -->
+
+                </div>
+
+
+
+                <div class="col-md-4 overflow-hidden" id="tomorrowsCard">
+                    
+
+                </div>
+
+                <div class="col-md-4 overflow-hidden rounded-end" id="dayAfterTomorrowsCard">
+                    
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- #endregion -->
+
+
+
+    <!-- #region ***** footer ***** -->
+
+    <footer class="bg-dark bg-opacity-75 p-5">
+
+        <div class="container w-75 d-flex align-items-center">
+            <div class="d-flex rounded-pill bg-dark p-1 w-75">
+                <input class="form-control bg-dark border-0 text-light focus-ring focus-ring-dark rounded-pill customPlaceHolder" type="text" placeholder="Enter your email to subscribe...">
+                <button class="btn btn-info rounded-pill px-4 py-2" type="button">Subscribe</button>
+            </div>
+            <div class="text-info w-25 d-flex justify-content-end">
+                <i class="fa-brands fa-facebook-f d-flex justify-content-center align-items-center p-2 bg-dark rounded-circle ms-2"></i>
+                <i class="fa-brands fa-twitter d-flex justify-content-center align-items-center p-2 bg-dark rounded-circle ms-2"></i>
+                <i class="fa-brands fa-google-plus-g d-flex justify-content-center align-items-center p-2 bg-dark rounded-circle ms-2"></i>
+                <i class="fa-brands fa-pinterest-p d-flex justify-content-center align-items-center p-2 bg-dark rounded-circle ms-2"></i>
+            </div>
+        </div>
+        <p class="container w-75 mt-3 text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    </footer>
+
+    <!-- #endregion -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
